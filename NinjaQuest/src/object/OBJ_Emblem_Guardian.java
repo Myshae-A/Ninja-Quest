@@ -1,0 +1,32 @@
+package object;
+
+import entity.Entity;
+import main.GamePanel;
+
+public class OBJ_Emblem_Guardian extends Entity{
+
+	public static final String objName = "Guardian Emblem";
+	GamePanel gp;
+	
+	public OBJ_Emblem_Guardian(GamePanel gp) {
+		super(gp);
+		this.gp = gp;
+		
+		type = type_emblem;
+		name = objName;
+		down1 = setup("/objects/emblem_guardian", gp.tileSize, gp.tileSize);
+		image = setup("/objects/emblem_guardian", gp.tileSize*2, gp.tileSize*2);
+		defenseValue = 1;
+		description = "";
+		price = 1000000;
+		//durability = 75;
+		
+		description = "[" + name + "]\nThe chosen class.";
+	}
+	public void interact() {
+		gp.ui.classPicked = "Guardian";
+		gp.ui.subState = 1;
+		gp.gameState = gp.pickClassState;
+		
+	}
+}
