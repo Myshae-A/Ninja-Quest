@@ -2,7 +2,7 @@ README
 
 NINJAQUEST - by Myshae Allen
 
-*Credit to YouTuber RyiSnow for original version*
+*Credit to YouTuber RyiSnow for inspiration
 
 Easiest Way to Run Code:
 Click this link: https://1drv.ms/u/s!AkHYKv5MDKilajYVtQOeLZVH4ng?e=H2NU2W 
